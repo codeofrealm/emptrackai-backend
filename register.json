@@ -1,0 +1,25 @@
+// POST
+// http://127.0.0.1:8000/api/register/
+
+{
+  "username": "api_test",
+  "company_name": "Acme Corp",
+  "email": "api_test@example.com",
+  "password": "AdminPass@123",
+  "confirm_password": "AdminPass@123"
+}
+
+
+// Successful Response
+// HTTP 201 Created
+
+{
+  "message": "Admin registered successfully.",
+  "admin": {
+    "id": 3,
+    "username": "api_test",
+    "company_name": "Acme Corp",
+    "email": "api_test@example.com",
+    "role": "ADMIN"
+  }
+}
